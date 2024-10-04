@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Blog.png" type="image/x-icon">
+    <title>BlogItTogether.com</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  
+  </head>
+  <body>
+    <div class="header">
+      <img src="Blog.png" alt="Your Logo" class="logo" />
+      <h1> BlogItTogether.com</h1>
+    </div>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="homepage.html" class="sign-in-form">
+            <h2 class="title">Sign In</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" required/>
+            </div>
+            <div class="input-field1">
+              <input type="checkbox" id="remember" name="remember" required/>
+              <label for="remember">Remember Me</label>
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+            <a href="forget.html" style="color: rgb(160,156,156);">Forgot password?</a>
+
+
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="https://www.facebook.com/" class="social-icon" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/i/flow/login" class="social-icon" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-150878327%3A1682690263990103&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&hl=en&ifkv=Af_xneGHpxo5gQ9jAu_Q8hWj5Zh5VahXT_L-In5uu1FiANC97bk34mgdI5yCGYIHnybKQzSuTDUf7A&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="social-icon" target="_blank">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="https://in.linkedin.com/" class="social-icon" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+
+
+          <form action="" class="sign-up-form">
+            <h2 class="title">Sign Up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Name" required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-calendar-alt"></i>
+              <input type="date" placeholder="Date of Birth" required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-venus-mars"></i>
+              <select class="gender-select">
+                <option value="" disabled selected>Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="input-field1">
+              <input type="checkbox" id="agree" required>
+              <label for="agree">By clicking submit, you agree to our terms and conditions</label>
+            </div>
+            
+            <input type="submit" value="Sign Up" class="btn solid" />
+
+            <p class="social-text">Or Sign up with social platforms</p>
+            <div class="social-media">
+              <a href="https://www.facebook.com/" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/i/flow/login" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-150878327%3A1682690263990103&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&hl=en&ifkv=Af_xneGHpxo5gQ9jAu_Q8hWj5Zh5VahXT_L-In5uu1FiANC97bk34mgdI5yCGYIHnybKQzSuTDUf7A&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="https://in.linkedin.com/" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="panels-container">
+
+        <div class="panel left-panel">
+            <div class="content">
+                <h3>New here?</h3>
+                <p>Create a new Account.</p>
+                <button class="btn transparent" id="sign-up-btn">Sign Up</button>
+            </div>
+            <img src="./img/log.svg" class="image" alt="">
+        </div>
+
+        <div class="panel right-panel">
+            <div class="content">
+                <h3>Already have an account?</h3>
+                <p>Click below to login in your account.</p>
+                <button class="btn transparent" id="sign-in-btn">Sign In</button>
+            </div>
+            <img src="./img/register.svg" class="image" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <a href="https://en.wikipedia.org/wiki/Copyright"><p>Copyright &copy; BlogItTogether.com </p></a>
+    <script src="./app.js"></script>
+  </body>
+</html>

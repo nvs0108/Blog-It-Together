@@ -1,0 +1,192 @@
+*{
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 80px;
+    background: url(flowerswp.png);
+    color: black;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+.container{
+	color: #34577b;
+	background-color: lightblue;
+}
+
+footer{
+	display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 80px;
+    background-color: grey;
+    color: black;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+}
+/* === Blog Form Styling === */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: beige;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+select {
+	margin-bottom: 20px;
+}
+
+input[type="text"]:focus, select:focus {
+    outline: none;
+    background-color: #e2e2e2;
+}
+
+textarea, input[type="text"], select {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease-in-out;
+}
+
+textarea:focus {
+    outline: none;
+    background-color: #e2e2e2;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: #ff5eff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #c34542;
+}
+
+/* Save Draft Button */
+.form-group1 button, .form-group2 button, .form-group3 button{
+    background-color: #34577b;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.form-group1 button, .form-group2 button, .form-group3 button {
+    background-color: #2a475e;
+}
+
+.form-group1 button:hover{
+    background-color: #223c55;
+}
+
+.form-group2 button {
+    background-color: #ff5eff;
+    color: white;
+    margin-right: 20px;
+}
+
+.form-group2 button:hover {
+    background-color: #223c55;
+}
+
+/* Submit Button */
+.form-group3 button {
+    background-color: #ff5eff;
+    color: white;
+}
+
+.form-group3 button:hover {
+    background-color: #c34542;
+}
+
+input:invalid {
+    border: 1px solid red;
+  }  
+
+/* === Social Media Share Buttons Styling === */
+.social-share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.social-share a {
+    display: inline-block;
+    margin: 0 5px;
+    color: #fff;
+    background-color: #ff5e5b;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.social-share a:hover {
+    background-color: #c34542;
+}
+
+.social-share i {
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-share a:hover i {
+	color: #fff;
+  }
+
+/* === Comments Section Styling === */
+.comments-section {
+    margin-top: 50px;
+}
+
+.comments-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #444;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

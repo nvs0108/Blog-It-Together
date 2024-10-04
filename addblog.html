@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Write a new blog post on BlogItTogether.com">
+  <title>Write a New Blog</title>
+  <!-- CSS stylesheets -->
+  <link rel="stylesheet" type="text/css" href="newblog.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/classic/ckeditor.js"></script>
+  <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/30.0.0/classic/ckeditor.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <!-- <p style="float:left; margin-left:30px">Home</p> -->
+    <div style="float:left; margin-left: 30px; margin-right:400px">
+      <a href="homepage.html"><p>Home</p></a>
+    </div>
+    <h1 style="margin-right: 500px;">Write a New Blog</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Blog Post Form -->
+    <div class="container">
+    <form name="blogForm">
+		<div class="form-group">
+			<label for="title">Title:</label>
+			<input type="text" id="title" name="title" placeholder="Enter the title of your blog post" required aria-label="Title" autocomplete="off" style="width: 400px; height: 25px;"><br><br>
+		</div>
+    <div class="form-group">
+			<label for="description">Description:</label>
+			<textarea id="description" name="description" rows="5" cols="50" placeholder="Enter a brief description of your blog post" maxlength="500" required aria-label="Description" autocomplete="off" style="height: 150px;"></textarea><br><br>
+		</div>
+    <div class="form-group">
+		  <label for="content">Content:</label>
+			<div id="content" name="content" rows="10" cols="50" aria-label="Blog content" autocomplete="off" style="height: 150px;"></div><br><br>
+		</div>
+        <div class="form-group">
+			<label for="category">Category:</label>
+			<select id="category" name="category" autocomplete="off" required style="width: 162px; height: 32px;">
+				<option value="">Select a category</option>
+				<option value="technology">Technology</option>
+				<option value="food">Food</option>
+				<option value="business">Business</option>
+        <option value="lifestyle">Lifestyle</option>
+        <option value="space">Space</option>
+        <option value="nature">Nature</option>
+        <option value="study">Study</option>
+        <option value="travel">Travel</option>
+			</select><br><br>
+		</div>
+        <div class="form-group">
+			<label for="image">Image:</label>
+			<input type="file" id="image" name="image" accept="image/*" aria-label="Upload an image for your blog post" required><br><br>
+		</div>
+        <div class="form-group">
+            <label for="cover-image">Cover Image:</label>
+            <input type="file" id="cover-image" name="cover-image" accept="image/*" aria-label="Upload a cover image for your blog post" required><br><br>
+        </div>
+        <div class="form-group1">
+          <button type="button" id="save" onclick="saveDraft()">Save Draft</button>
+        </div>
+        <div class="form-group2">
+            <button type="button" id="load" onclick="loadDraft()">Load Draft</button>
+        </div>
+        <div id="draft-message" style="display: none;"></div>
+        <div class="form-group3">
+            <button type="submit" value="Publish" onclick="return validateForm()">Submit</button>
+        </div>
+        <div id="autosave-message" style="display: none;">Autosaved!</div>
+    </form>
+    <div id="success-message" style="display: none;">
+      <p>Your blog post has been published successfully!</p>
+    </div>
+    
+
+    <!-- Share Buttons -->
+    <div class="share-buttons">
+      <a id="facebook" href="https://www.facebook.com/sharer/sharer.php?u=<url>" target="_blank"><i class="fab fa-facebook"></i> Share on Facebook</a>
+      <a id="twitter" href="https://twitter.com/intent/tweet?url=<url>&text=<text>" target="_blank"><i class="fab fa-twitter"></i> Share on Twitter</a>
+      <a id="linkedin" href="https://www.linkedin.com/shareArticle?url=<url>&title=<title>" target="_blank"><i class="fab fa-linkedin"></i> Share on LinkedIn</a>
+    </div>
+    <!-- Footer-->
+    <footer>
+        <p>&copy; BlogItTogether.com</p>
+    </footer>
+  </main>
+  <script src="newblog.js"></script>
+</body>
+</html>
